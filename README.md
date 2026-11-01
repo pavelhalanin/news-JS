@@ -65,4 +65,6 @@ npm init @eslint/config@latest
 npm i -D @eslint/js@^9
 
 npm i -D prettier
+
+npm i -D @types/node
 ```
