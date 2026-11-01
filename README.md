@@ -63,4 +63,6 @@ npm init @eslint/config@latest
 # √ Successfully created C:\Users\_\Desktop\news-JS\eslint.config.mts file.
 
 npm i -D @eslint/js@^9
+
+npm i -D prettier
 ```
