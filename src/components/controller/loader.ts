@@ -14,7 +14,7 @@ class Loader {
         callback: Callback<T> = (): void => {
             console.error('No callback for GET response');
         }
-    ) {
+    ): void {
         this.load<T>('GET', endpoint, callback, options);
     }
 
@@ -32,7 +32,7 @@ class Loader {
         return Object.keys(obj) as Array<keyof T>;
     }
 
-    makeUrl(options: Partial<FetchGetParams>, endpoint: string) {
+    makeUrl(options: Partial<FetchGetParams>, endpoint: string): string {
         const urlOptions: Partial<FetchGetParams> = { ...this.options, ...options };
         let url = `${this.baseLink}${endpoint}?`;
 
@@ -45,7 +45,7 @@ class Loader {
         return url.slice(0, -1);
     }
 
-    load<T>(method: HttpMethod, endpoint: Endpoint, callback: Callback<T>, options: Partial<FetchGetParams>) {
+    load<T>(method: HttpMethod, endpoint: Endpoint, callback: Callback<T>, options: Partial<FetchGetParams>): void {
         fetch(this.makeUrl(options, endpoint), { method })
             .then(this.errorHandler)
             .then((res) => res.json())
