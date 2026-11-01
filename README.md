@@ -61,4 +61,6 @@ npm init @eslint/config@latest
 #
 # ☕️Installing...
 # √ Successfully created C:\Users\_\Desktop\news-JS\eslint.config.mts file.
+
+npm i -D @eslint/js@^9
 ```
