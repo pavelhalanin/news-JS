@@ -11,7 +11,7 @@ class Loader {
 
     getResp<T>(
         { endpoint, options = {} }: RequestParams,
-        callback = (): void => {
+        callback: Callback<T> = (): void => {
             console.error('No callback for GET response');
         }
     ) {
