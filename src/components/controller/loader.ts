@@ -34,7 +34,7 @@ class Loader {
 
     makeUrl(options: Partial<FetchGetParams>, endpoint: string): string {
         const urlOptions: Partial<FetchGetParams> = { ...this.options, ...options };
-        let url = `${this.baseLink}${endpoint}?`;
+        let url = `${this.baseLink}${this.options.apiKey ? '' : 'mocks/'}${endpoint}?`;
 
         const keys = this.typedKeys(urlOptions);
 
