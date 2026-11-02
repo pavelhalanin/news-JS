@@ -1,8 +1,8 @@
 .footer__wrapper {
-    padding-top: 32px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding: 8px;
 }
 
 .footer__wrapper > p {
@@ -17,9 +17,9 @@
 }
 
 .footer__buttons a {
-    border: 1px solid #30c5ff;
-    background-color: #30c5ff;
-    color: blue;
+    border: 2px solid #3fcc59;
+    background-color: #3fcc59;
+    color: white;
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.5s ease;
@@ -30,11 +30,13 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
+
+    width: calc(100% - 1px * 2 - 8px * 2);
 }
 
 .footer__buttons a:hover {
     background-color: transparent;
-    color: #30c5ff;
+    color: #3fcc59;
 }
 
 .footer__buttons a img {
@@ -42,7 +44,7 @@
     height: 32px;
 }
 
-.footer__year {
+.footer__copyright {
     text-align: center;
 }
 
@@ -54,4 +56,12 @@
     .footer__buttons a {
         width: 100%;
     }
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright a {
+    color: white;
 }
