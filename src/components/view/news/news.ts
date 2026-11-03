@@ -32,6 +32,12 @@ class News {
             fragment.append(newsClone);
         });
 
+        if (data.length === 0) {
+            const DIV = document.createElement('div');
+            DIV.textContent = 'News not found for this category';
+            fragment.append(DIV);
+        }
+
         querySelector('.news').innerHTML = '';
         querySelector('.news').appendChild(fragment);
     }
