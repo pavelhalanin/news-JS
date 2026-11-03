@@ -48,7 +48,7 @@
     text-align: center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 650px) {
     .footer__buttons {
         flex-direction: column;
     }

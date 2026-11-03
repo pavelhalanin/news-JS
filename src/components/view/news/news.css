@@ -186,6 +186,18 @@
 .news__section > .news {
     padding: 8px;
     width: calc(100% - 8px * 2);
-    height: calc(100vh - 140px - 16px * 2 - 145px - 8px * 2);
+    height: calc(100vh - 140px - 16px * 2 - 120px - 8px * 2);
     overflow-y: scroll;
+}
+
+@media (max-width: 900px) {
+    .news__section > .news {
+        height: calc(100vh - 140px - 16px * 2 - 80px - 8px * 2);
+    }
+}
+
+@media (max-width: 650px) {
+    .news__section > .news {
+        height: calc(100vh - 140px - 16px * 2 - 130px - 8px * 2);
+    }
 }
