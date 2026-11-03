@@ -15,7 +15,7 @@ class News {
             if (idx % 2) querySelector('.news__item', newsClone).classList.add('alt');
 
             querySelector('.news__meta-photo', newsClone).style.backgroundImage = `url(${
-                item.urlToImage || 'img/news_placeholder.jpg'
+                item.urlToImage || './assets/news/news_placeholder.svg'
             })`;
             querySelector('.news__meta-author', newsClone).textContent = item.author || item.source.name;
             querySelector('.news__meta-date', newsClone).textContent = item.publishedAt
