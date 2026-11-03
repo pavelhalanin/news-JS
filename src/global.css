@@ -5,7 +5,7 @@ body {
 }
 
 .scroll {
-    scrollbar-width: 1em;
+    scrollbar-width: auto;
     scrollbar-color: rgb(0, 55, 110) #30c5ff;
     overflow-y: scroll;
 }
