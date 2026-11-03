@@ -3,7 +3,7 @@ import { NewsSource } from '../../controller/loader.dto';
 import './sources.css';
 
 class Sources {
-    draw(data: NewsSource[]): void {
+    public draw(data: NewsSource[]): void {
         const fragment = document.createDocumentFragment();
         const sourceItemTemp = querySelector<HTMLTemplateElement>('#sourceItemTemp');
 
