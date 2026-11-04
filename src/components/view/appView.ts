@@ -1,8 +1,6 @@
 import { ArticlesResponse, SourcesResponse } from '../controller/loader.dto';
 import News from './news/news';
 import Sources from './sources/sources';
-import './header/header';
-import './footer/footer';
 
 export class AppView {
     private news: News;
