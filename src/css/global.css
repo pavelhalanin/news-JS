@@ -1,0 +1,11 @@
+body {
+    color: #fff;
+    background: #17181c;
+    font-family: sans-serif;
+}
+
+.scroll {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(0, 55, 110) #30c5ff;
+    overflow-y: scroll;
+}

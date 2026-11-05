@@ -1,0 +1,16 @@
+header {
+    padding: 10px 30px;
+    border: 2px solid #30c5ff;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 20px;
+    }
+}
